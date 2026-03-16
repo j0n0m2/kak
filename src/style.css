@@ -3,10 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 body {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 .frame-container {
   width: 300px;
@@ -15,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 8px;
+  position: relative;
 }
 .photo-container {
   display: flex;
@@ -56,12 +63,20 @@ label {
 }
 .title-container {
   width: 100%;
-  height: 100%;
+  height: 50%;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .title-image {
   height: 50%;
-  width: 100%;
   object-fit: contain;
+}
+#download-button {
+  display: none;
+  padding: 18px 20px;
+  cursor: pointer;
+  background-color: #dddddd;
+  border-radius: 100%;
+  color: #000;
 }

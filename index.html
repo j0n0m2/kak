@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kak!</title>
     <link rel="stylesheet" href="./src/style.css" />
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script src="./src/loadFile.js"></script>
+    <script src="./src/showDownloadButton.js"></script>
+    <script src="./src/downloadImage.js"></script>
   </head>
   <body>
+    <div id="download-button">
+      <a href="#" id="download-link" onclick="downloadImage(); return false;"
+        >⬇</a
+      >
+    </div>
     <div class="frame-container">
       <div class="photo-container">
         <form action="">

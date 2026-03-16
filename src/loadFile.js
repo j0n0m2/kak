@@ -10,4 +10,5 @@ function loadFile(input) {
       document.getElementById("select-img-button").style.display = "none";
     }
   }
+  showDownloadButton();
 }
