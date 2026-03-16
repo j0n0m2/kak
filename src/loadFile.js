@@ -5,7 +5,7 @@ function loadFile(input) {
     let image = document.getElementById("img" + (i + 1));
 
     if (files[i]) {
-      image.src = URL.createObjectURL(files[i]);
+      image.style.backgroundImage = `url(${URL.createObjectURL(files[i])})`;
       image.style.display = "block";
       document.getElementById("select-img-button").style.display = "none";
     }

@@ -54,12 +54,8 @@ label {
   width: 100%;
   height: 188px;
   overflow: hidden;
-  background-color: white;
-}
-.photo-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background-size: cover; /* 사진 비율 유지하며 꽉 채움 */
+  background-position: center; /* 사진 중앙 정렬 */
 }
 .title-container {
   width: 100%;
