@@ -6,6 +6,7 @@ function loadFile(input) {
 
     if (files[i]) {
       image.style.backgroundImage = `url(${URL.createObjectURL(files[i])})`;
+      image.style.backgroundColor = "transparent";
       image.style.display = "block";
       document.getElementById("select-img-button").style.display = "none";
     }
